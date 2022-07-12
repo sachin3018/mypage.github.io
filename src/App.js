@@ -4,20 +4,27 @@ import Introduction from './sections/introduction';
 import Tech from './sections/Tech'
 import Social from './sections/Social';
 import Footer from './sections/Footer'
+import Header from './sections/Header'
+import Project from './sections/Project';
+
 
 function App() {
 
-  React.useEffect(() => {
-    alert("This is under progress...")
-  })
+  
 
   return (
-    <div className="container">
-      <Introduction/>
-      <Tech/>
-      <Social/>
-      <Footer/>
-    </div>
+    <>
+      
+        <Header/>
+        <Introduction/>
+        <Tech/>
+        <Project/>
+        <Social/>
+        <Footer/>
+      <div className='notAvailable'>
+        <h2>Sorry Not available for this screen size and smaller</h2>
+      </div>
+    </>
   );
 }
 

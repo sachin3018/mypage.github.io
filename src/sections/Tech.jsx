@@ -103,7 +103,7 @@ const Tech = () => {
     
 
     return(
-        <div className='row tech'>
+        <div className='row tech common' id="skills">
             <h3 className='skills'>Skills</h3>
             {
                 skills.map((skill) => (

@@ -5,7 +5,7 @@ const Social = () => {
    
 
     return(
-        <div className='row tech'>
+        <div className='row tech common' id="social">
             <h3 className='skills'>Social Media</h3>
             <div className='row'>
                 <div className='col md-3 icon'>

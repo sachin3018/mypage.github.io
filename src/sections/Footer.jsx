@@ -4,7 +4,7 @@ const Social = () => {
    
     const copyright = '😁 HAPPY CODING 😁'
     return(
-        <div className='row'>
+        <div className='row common'>
             <div className='footer'>
                 <p>{copyright}</p>
             </div>
