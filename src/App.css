@@ -135,7 +135,7 @@ body{
 }
 
 
-@media (max-width: 411px) {
+@media (max-width: 300px) {
     .common{
         display: none;
     }
