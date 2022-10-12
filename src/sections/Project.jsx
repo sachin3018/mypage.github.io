@@ -37,8 +37,8 @@ const Project = () => {
             <div className='row'>
             {
                 videoUrl.map((video) => (
-                    <div className='col md-4 video m-3 pt-3 projectdiv' style={{"backgroundColor" : "#CAD5E2"}}>
-                        <ReactPlayer url={video.url} />
+                    <div className='col-5 video m-4 pt-3 projectdiv' style={{"backgroundColor" : "#CAD5E2"}}>
+                        <ReactPlayer url={video.url} style={{"overflow" : "hidden","height" : "75%","width" : "75%"}} width="75%" />
                         <h3 className='projectTitle'>{video.title}</h3>
                         {video.team && video.teamMember.map((memeber) => (
                             <h4 className='text-align-left' style={{"display": video.display}}>Team Member : {memeber.name}</h4>
