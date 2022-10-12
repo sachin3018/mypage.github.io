@@ -1,7 +1,7 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
 body{
-    background-color: #CAD5E2;
+    background-color: #242B2E;
     width: 100vw;
     overflow-x: hidden;
     
@@ -23,32 +23,37 @@ body{
      flex: 1;
      justify-content: center;
      align-items: center;
+     border-radius: 10px;
 }
 
 .myimg {
-    border-radius: 50px;
-    overflow: hidden;
-    height: 90%;
-    width: 80%;
+    /* border-radius: 50px; */
+    /* overflow: hidden; */
+    height: 100%;
+    width: 100%;
     border-radius: 20%;
-    padding: 5%;
+    padding: 5% 5%;
+    /* padding: 5%; */
 }
 
 .name {
-    padding: "10%";
+    /* padding: 2% 5%; */
     color: #0D0D0D;
     text-align: center;
-    font-size: 200%;
+    font-size: 150%;
     font-weight: bolder;
-    
+    background-color: yellow
 }
 
 .detail{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    padding: 0% 5%;
+    color: #fff;
     font-family: cursive;
-    font-size: 180%
+    text-align: center;
+    font-size: 200%;
+    font-weight: bolder;
+    vertical-align: middle;
+    margin: 25% 0%;
 }
 
 .tech {
@@ -59,13 +64,14 @@ body{
     margin-top: 2%;
     border-radius: 2%;
     padding: 3%;
+    color: #fff;
 }
 
 .skills {
     text-align: center;
     font-family: cursive;
     font-size: xx-large;
-    
+    color: #fff;
 }
 
 .bars{
@@ -73,10 +79,25 @@ body{
     margin-bottom: 2%;
 }
 
-.icon{
+.icons{
     display: flex;
     justify-content: center;
     margin-top: 3%;
+    color: #fff;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 1%;
+    border-radius: 25%;
+}
+
+.icon{
+    background-color: white;
+    border-radius: 50%;
+}
+
+.icon:hover{
+    background-color: #c1c1c1;
+    cursor: pointer;
 }
 
 .video{
@@ -97,13 +118,19 @@ body{
     font-size: x-large;
 }
 
+.projectTitle{
+    color: black;
+}
+
+.projectdiv{
+    border-radius: 25px;
+}
+
 @media (max-width: 992px) {
     .imageDiv{
         display: none;
        
-    }
-
-    
+    }  
 }
 
 

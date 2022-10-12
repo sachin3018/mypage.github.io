@@ -1,30 +1,31 @@
 import React from 'react';
-
+import ReactPlayer from 'react-player/lazy'
 
 const Project = () => {
     
     const videoUrl = [
         {
-            url : "https://drive.google.com/file/d/1Q5JbPH36EptNIpFIH9p4P5K0HzpB7M3h/preview",
+            url : "https://youtube.com/shorts/PhBZpkzglTQ?feature=share",
             title: "Pizza Application",
             team : false
         },
         {
-            url : "https://drive.google.com/file/d/1TBMb3v3T82yLjAuhSHmOdOSEez1vOgdX/preview",
+            url : "https://youtu.be/qQIvgvYY5yk",
             title : "5 different Screen with dark theme",
             team : true,
             teamMember : [
                 {name : "Mihir Upadhyay"},
                 {name : "Ravi Shayam"}
-            ]
+            ],
+            display : "none"
         },
         {
-            url : "https://drive.google.com/file/d/1ZHtxRIOEKQe4ElJrcscziKhpqGrXNYAT/preview",
+            url : "https://youtube.com/shorts/x81e8WDqTy0?feature=share",
             title : "News Application",
             team : false
         },
         {
-            url : "https://drive.google.com/file/d/1ZBbpF0DRvN2R0Zr2r7950ZyL2Rd3BM1d/preview",
+            url : "https://youtube.com/shorts/8oYh2mfunMc?feature=share",
             title : "Netflix Clone",
             team : false
         },
@@ -36,11 +37,11 @@ const Project = () => {
             <div className='row'>
             {
                 videoUrl.map((video) => (
-                    <div className='col md-4 video'>
-                        <iframe src={video.url} width="500" height="380" allow="autoplay"></iframe>
-                        <h3>{video.title}</h3>
+                    <div className='col md-4 video m-3 pt-3 projectdiv' style={{"backgroundColor" : "#CAD5E2"}}>
+                        <ReactPlayer url={video.url} />
+                        <h3 className='projectTitle'>{video.title}</h3>
                         {video.team && video.teamMember.map((memeber) => (
-                            <h4 className='text-align-left'>Team Member : {memeber.name}</h4>
+                            <h4 className='text-align-left' style={{"display": video.display}}>Team Member : {memeber.name}</h4>
                         ))}
                     </div>
                 ))

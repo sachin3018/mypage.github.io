@@ -3,15 +3,14 @@ const image = require('../Assets/sachin.png')
 
 const Introduction = () => {
     return(
-        <div className='row intro common mb-3 mt-2' id="home">
-            <div className='col md-6 p-3 imageDiv'>
-                <img src={image.default} alt="image" className='rounded myimg'/>
-            </div>
-            <div className='col md-6 p-3 detail'>
-                <div className='name'>
-                    <h1>Sachin Singh</h1>
+        <div className='row intro common mb-3 mt-2' id="home" >
+            <div className='col-6 p-3 imageDiv'>
+                <div className='row p-3'>
+                    <img src={image.default} alt="image" className='myimg'/>
                 </div>
-                <p>
+            </div>
+            <div className='col-6'>
+                <p className="detail">
                     Self-motivated , Fast learner and hardworking B.Tech graduate in computer science and engineering. I am always ready to work in a
                     challenging environment to prove my technical skills and utilize the knowledge of my domain in 
                     the growth of the organization and I will always upskill my self.
